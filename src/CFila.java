@@ -94,13 +94,13 @@ public class CFila {
 	// Questao 9 lista 3 LABII
 	// Chama o m�todo desempilha enquanto nao estiver vazio (enquanto quantidade for
 	// diferente de 0)
-	void limpa() {
+	public void limpa() {
 		this.frente = null;
 		this.tras = this.frente;
 	}
 	
 	// Questao 10 lista 3 LABII
-	void furaFila(Object item) {
+	public void furaFila(Object item) {
 		if(frente != tras) {			
 			CCelula aux = new CCelula();
 			aux.prox = frente.prox;
@@ -110,5 +110,15 @@ public class CFila {
 			enfileira(item);
 		}
 	}
-
+	
+	//Questao 15 Trabalho 1 AEDII	
+	public void inverte() {
+		CPilha aux = new CPilha();
+		while(!this.vazia()) {
+			aux.empilha(this.desenfileira());			
+		}
+		while(!aux.vazia()) {
+			this.enfileira(aux.desempilha());
+		}
+	}
 }

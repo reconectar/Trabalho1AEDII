@@ -1,6 +1,4 @@
 class Deque {
-	
-	// TODO Finish
 
 	private CCelulaDup primeira; // Referencia a primeira celula da lista (celula cabeca)
 	private CCelulaDup ultima; // Referencia a ultima celula da lista
@@ -47,6 +45,13 @@ class Deque {
 	}
 
 	public Object popRight() {
-
+		Object item=null;
+		if (!isEmpty()) {
+			item = ultima.item;
+	        ultima = ultima.ant;
+	        ultima.prox = null;
+	        qtde--;	          
+	       }
+		return item;
 	}
 }

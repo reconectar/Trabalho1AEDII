@@ -7,8 +7,7 @@ public class Q5 {
 		}
 		while(!F2.vazia()) {
 			AmaisB.enfileira(F2.desenfileira());			
-		}	
-		
+		}		
 		return AmaisB;
 	}
 

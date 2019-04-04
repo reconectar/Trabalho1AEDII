@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Q31 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		CDicionario teste = new CDicionario();		
+		teste.adiciona("UUU", "FENILALANINA");
+		teste.adiciona("UUC", "FENINANALINA");
+		teste.adiciona("UUA", "LEUCINA");
+		teste.adiciona("UUG", "LEUCINA");
+		teste.adiciona("CUU", "LEUCINA");
+		teste.adiciona("CUC", "LEUCINA");
+		teste.adiciona("CUA", "LEUCINA");
+		teste.adiciona("CUG", "LEUCINA");
+		teste.adiciona("AUU", "ISOLEUCINA");
+		teste.adiciona("AUC", "ISOLEUCINA");
+		teste.adiciona("AUA", "ISOLEUCINA");
+		teste.adiciona("AUG", "METIONINA");
+		teste.adiciona("GUU", "VALINA");
+		teste.adiciona("GUC", "VALINA");
+		teste.adiciona("GUA", "VALINA");
+		teste.adiciona("GUG", "VALINA");
+		teste.adiciona("UCU", "SERINA");
+		teste.adiciona("UCC", "SERINA");
+		teste.adiciona("UCA", "SERINA");
+		teste.adiciona("UCG", "SERINA");
+		teste.adiciona("CCU", "PROLINA");
+		teste.adiciona("CCC", "PROLINA");
+		teste.adiciona("CCA", "PROLINA");
+		teste.adiciona("CCG", "PROLINA");
+		teste.adiciona("ACU", "TREONINA");
+		teste.adiciona("ACC", "TREONINA");
+		teste.adiciona("ACA", "TREONINA");
+		teste.adiciona("ACG", "TREONINA");
+		teste.adiciona("GCU", "ALANINA");
+		teste.adiciona("GCC", "ALANINA");
+		teste.adiciona("GCA", "ALANINA");
+		teste.adiciona("GCG", "ALANINA");
+		teste.adiciona("UAU", "TIROSINA");
+		teste.adiciona("UAC", "TIROSINA");
+		teste.adiciona("UAA", "PARADA");
+		teste.adiciona("UAG", "PARADA");
+		teste.adiciona("CAU", "HISTIDINA");
+		teste.adiciona("CAC", "HISTIDINA");
+		teste.adiciona("CAA", "GLUTAMINA");
+		teste.adiciona("CAG", "GLUTAMINA");
+		teste.adiciona("AAU", "ASPARIGINA");
+		teste.adiciona("AAC", "ASPARIGINA");
+		teste.adiciona("AAA", "LISINA");
+		teste.adiciona("AAG", "LISINA");
+		teste.adiciona("GAU", "ASPARTATO");
+		teste.adiciona("GAC", "ASPARTATO");
+		teste.adiciona("GAA", "GLUTAMATO");
+		teste.adiciona("GAG", "GLUTAMATO");
+		teste.adiciona("UGU", "CISTEÍNA");
+		teste.adiciona("UGC", "CISTEÍNA");
+		teste.adiciona("UGA", "PARADA");
+		teste.adiciona("UGG", "TRIPTOFANO");
+		teste.adiciona("CGU", "ARGININA");
+		teste.adiciona("CGC", "ARGININA");
+		teste.adiciona("CGA", "ARGININA");
+		teste.adiciona("CGG", "ARGININA");
+		teste.adiciona("AGU", "SERINA");
+		teste.adiciona("AGC", "SERINA");
+		teste.adiciona("AGA", "ARGININA");
+		teste.adiciona("AGG", "ARGININA");
+		teste.adiciona("GGU", "GLICINA");
+		teste.adiciona("GGC", "GLICINA");
+		teste.adiciona("GGA", "GLICINA");
+		teste.adiciona("GGG", "GLICINA");
+		
+		teste.recebeValor(in.nextLine());
+	}
+}

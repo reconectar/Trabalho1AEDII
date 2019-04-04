@@ -80,8 +80,20 @@ public class CPilha {
 	// Questao 8 lista 3 LABII
 	// Chama o m�todo desempilha enquanto nao estiver vazio (enquanto quantidade for
 	// diferente de 0)
-	void limpa() {
+	public void limpa() {
 		this.topo = null;
 	}
+	
+	//Questao 14 Trabalho 1 AEDII
+	public void inverte() {
+		CFila aux = new CFila();
+		while(!this.vazia()) {
+			aux.enfileira(this.desempilha());			
+		}
+		while(!aux.vazia()) {
+			this.empilha(aux.desenfileira());
+		}
+	}
+	
 
 }

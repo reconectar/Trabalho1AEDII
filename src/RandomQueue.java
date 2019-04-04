@@ -1,5 +1,3 @@
-import java.util.Random;
-
 class RandomQueue {
 	private CCelula frente; // Celula cabeca.
 	private CCelula tras; // Ultima celula.
@@ -43,8 +41,4 @@ class RandomQueue {
 		}
 		return aux.item;
 	} // Retorna um elemento aleatório sem removê-lo da RandomQueue
-
-	public static void main(String[] args) {
-		// TODO Testar
-	}
 }

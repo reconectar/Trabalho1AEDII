@@ -270,7 +270,7 @@ public class CLista {
 		return qtde;
 	}
 
-	// Questao 1 lista 1 AED
+	// Questao 1 trabalho 1 AED
 	public void InsereAntesDe(Object ElementoAInserir, Object Elemento) {
 		CCelula aux = primeira;
 		boolean achei = false;
@@ -286,7 +286,7 @@ public class CLista {
 		}
 	}
 
-	// Questao 2 lista 1 AED
+	// Questao 2 trabalho 1 AED
 	public void InsereDepoisDe(Object ElementoAInserir, Object Elemento) {
 		CCelula aux = this.primeira;
 		boolean achei = false;
@@ -304,8 +304,7 @@ public class CLista {
 		}
 	}
 
-	// Questao 3 Lista 1 AED
-
+	// Questao 3 trabalho 1 AED
 	public void InsereOrdenado(int ElementoAInserir) {
 		CCelula aux = this.primeira;
 		boolean achei = false;
@@ -321,6 +320,6 @@ public class CLista {
 		}else {
 			this.insereFim(ElementoAInserir);
 		}
-	}	
+	}
 	
 }
